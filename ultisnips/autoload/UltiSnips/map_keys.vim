@@ -12,13 +12,13 @@ endif
 " The trigger used to display all triggers that could possible
 " match in the current position.
 if !exists("g:UltiSnipsListSnippets")
-    let g:UltiSnipsListSnippets = "<c-tab>"
+    let g:UltiSnipsListSnippets = "<c-l>"
 endif
 
 " The trigger used to jump forward to the next placeholder.
 " NOTE: expansion and forward jumping can be the same trigger.
 if !exists("g:UltiSnipsJumpForwardTrigger")
-    let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+    let g:UltiSnipsJumpForwardTrigger = "<tab>"
 endif
 
 " The trigger to jump backward inside a snippet
