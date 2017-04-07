@@ -1,4 +1,6 @@
 c-base	c.txt	/*c-base*
+c-inc	c.txt	/*c-inc*
+c-increment	c.txt	/*c-increment*
 c-lib	c.txt	/*c-lib*
 c-ope	c.txt	/*c-ope*
 c-operator	c.txt	/*c-operator*

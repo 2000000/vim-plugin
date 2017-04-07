@@ -56,4 +56,17 @@ C++: /usr/include/c++ <cassert>
 <stdint.h>  <stdio.h>    <stdlib.h>    <string.h>
 <tgmath.h>  <time.h>     <wchar.h>     <wctype.h>
 
+Postfix Increment Operator                                *c-increment* *c-inc*
+*s++; // *(s++);
+*++s;
+(*s)++;
+++*s;
+
+a=2+i++;
+i++; //  ++i;
+
+C99 P67
+i = ++i + 1; a[i++] = i; //the behavior is undefined
+i+++i; i+i++;
+
 vim: tw=80
