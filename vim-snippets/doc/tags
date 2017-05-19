@@ -7,3 +7,6 @@ c-operator	c.txt	/*c-operator*
 c-res	c.txt	/*c-res*
 c-reserve	c.txt	/*c-reserve*
 c.txt	c.txt	/*c.txt*
+cpp-base	c.txt	/*cpp-base*
+m-base	c.txt	/*m-base*
+py-base	python.txt	/*py-base*
