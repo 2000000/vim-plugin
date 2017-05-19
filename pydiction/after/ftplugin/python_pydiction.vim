@@ -1,7 +1,6 @@
 " To do case-sensitive searches, set noignorecase (:set noic).
-
-" Make the Tab key do python code completion:
-inoremap <silent> <buffer> <Tab> 
+" inoremap <silent> <buffer> <Tab> 
+inoremap <silent> <buffer> <C-p> 
          \<C-R>=<SID>SetVals()<CR>
          \<C-R>=<SID>TabComplete('down')<CR>
          \<C-R>=<SID>RestoreVals()<CR>
@@ -40,24 +39,14 @@ endif
 
 if !exists("*s:SetVals") 
     function! s:SetVals()
-        " Save and change any config values we need.
-        " Temporarily change isk to treat periods and opening 
-        " parenthesis as part of a keyword -- so we can complete
-        " python modules and functions:
+        " Save and change config values
         let s:pydiction_save_isk = &iskeyword
         setlocal iskeyword +=.,(
 
-        " Save any current dictionaries the user has set:
         let s:pydiction_save_dictions = &dictionary
-        " Temporarily use only pydiction's dictionary:
-        let &dictionary = g:pydiction_location
-
-        " Save the ins-completion options the user has set:
+        let &dictionary = g:pydict
         let s:pydiction_save_cot = &completeopt
-        " Have the completion menu show up for one or more matches:
         let &completeopt = "menu,menuone"
-
-        " Set the popup menu height:
         let s:pydiction_save_pumheight = &pumheight
         if !exists('g:pydiction_menu_height')
             let g:pydiction_menu_height = 8
@@ -78,4 +67,3 @@ if !exists("*s:RestoreVals")
         return ''
     endfunction
 endif
-
