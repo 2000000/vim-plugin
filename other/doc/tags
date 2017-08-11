@@ -51,6 +51,7 @@ NERDComYankComment	NERD_commenter.txt	/*NERDComYankComment*
 NERDCommenter	NERD_commenter.txt	/*NERDCommenter*
 NERDCommenterContents	NERD_commenter.txt	/*NERDCommenterContents*
 NERD_commenter.txt	NERD_commenter.txt	/*NERD_commenter.txt*
+<<<<<<< HEAD:doc/tags
 c-base	base.txt	/*c-base*
 c-inc	base.txt	/*c-inc*
 c-increment	base.txt	/*c-increment*
@@ -63,3 +64,5 @@ cpp-b	base.txt	/*cpp-b*
 cpp-base	base.txt	/*cpp-base*
 m-base	base.txt	/*m-base*
 mb	base.txt	/*mb*
+=======
+>>>>>>> bcd05d5afc6c103658bf83a68ffbb25910d193ce:other/doc/tags
