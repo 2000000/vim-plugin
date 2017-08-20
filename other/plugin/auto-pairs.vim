@@ -1,11 +1,4 @@
 " Insert or delete brackets, parens, quotes in pairs.
-" Maintainer:	JiangMiao <jiangfriend@gmail.com>
-" Contributor: camthompson
-" Last Change:  2013-07-13
-" Version: 1.3.2
-" Homepage: http://www.vim.org/scripts/script.php?script_id=3599
-" Repository: https://github.com/jiangmiao/auto-pairs
-" License: MIT
 
 if exists('g:AutoPairsLoaded') || &cp
   finish
@@ -75,7 +68,6 @@ if !exists('g:AutoPairsSmartQuotes')
 endif
 
 " 7.4.849 support <C-G>U to avoid breaking '.'
-" Issue talk: https://github.com/jiangmiao/auto-pairs/issues/3
 " Vim note: https://github.com/vim/vim/releases/tag/v7.4.849
 if v:version >= 704 && has("patch849")
   let s:Go = "\<C-G>U"
@@ -89,7 +81,6 @@ let s:Right = s:Go."\<RIGHT>"
 
 " Will auto generated {']' => '[', ..., '}' => '{'}in initialize.
 let g:AutoPairsClosedPairs = {}
-
 
 function! AutoPairsInsert(key)
   if !b:autopairs_enabled
@@ -559,6 +550,5 @@ endfunction
 " Always silent the command
 inoremap <silent> <SID>AutoPairsReturn <C-R>=AutoPairsReturn()<CR>
 imap <script> <Plug>AutoPairsReturn <SID>AutoPairsReturn
-
 
 au BufEnter * :call AutoPairsTryInit()
