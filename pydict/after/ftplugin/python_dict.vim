@@ -1,5 +1,4 @@
-inoremap <silent> <buffer> <S-Tab>  <C-R>=<SID>SetVals()<CR>
-			\<C-N><C-R>=<SID>RestoreVals()<CR>
+inoremap <silent> <buffer> <S-Tab>  <C-R>=<SID>SetVals()<CR><C-N><C-R>=<SID>RestoreVals()<CR>
 
 function! s:SetVals()
 	let s:py_isk = &isk
