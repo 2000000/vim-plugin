@@ -1,9 +1,11 @@
 function Transg(word)
 python << XXX
 import vim
+import os
+
 text = vim.eval("a:word")
 
-f = open("/.vim/other/dict/4k")
+f = open(os.path.expanduser('~')+"/.vim/other/dict/4k")
 w = [line.split() for line in f]
 c = len(w)
 i = 0
