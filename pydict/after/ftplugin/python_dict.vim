@@ -1,3 +1,4 @@
+set ts=2 sw=2 et "temporary
 inoremap <silent> <buffer> <S-Tab>  <C-R>=<SID>SetVals()<CR><C-N><C-R>=<SID>RestoreVals()<CR>
 
 function! s:SetVals()

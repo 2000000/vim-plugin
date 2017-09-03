@@ -3,14 +3,20 @@ python << XXX
 import vim
 text = vim.eval("a:word")
 
-w = [line.split() for line in open("/home/gjie/.vim/other/dict/4k")]
-
-for i in range(1,2000):
-	if text == w[i][0]:
-		print w[i][1]
-		i = 0
+f = open("/.vim/other/dict/4k")
+w = [line.split() for line in f]
+c = len(w)
+i = 0
+for i in range(0,c):
+	if text == w[i][0] or text == w[i][0]+'s':
+		if len(w[i]) == 2:
+			print w[i][1]
+		else:
+			print "无解释"
 		break
 
+if i == c-1:
+	print "无记录"
 XXX
 endfunction
 
