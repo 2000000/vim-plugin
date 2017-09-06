@@ -4,8 +4,8 @@ import vim
 import os
 
 text = vim.eval("a:word")
-
-f = open(os.path.expanduser('~')+"/.vim/other/dict/4k")
+print text
+f = open(os.path.expanduser('~')+"/.vim/other/dict/3k")
 w = [line.split() for line in f]
 c = len(w)
 i = 0
