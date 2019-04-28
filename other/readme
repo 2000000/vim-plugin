@@ -1,2 +1,0 @@
-sysinc tags 不再维护，用clang_complete代替，保留这个为了偶尔在 pi 上小体量编程，纯属装逼
-
